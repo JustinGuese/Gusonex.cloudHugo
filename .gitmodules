@@ -1,0 +1,6 @@
+[submodule "themes/kross"]
+	path = themes/kross
+	url = https://github.com/themefisher/kross-hugo-portfolio-template.git
+[submodule ".\\themes\\biztrox"]
+	path = .\\themes\\biztrox
+	url = https://github.com/Meeshkan/biztrox-hugo.git
