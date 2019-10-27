@@ -1,4 +1,4 @@
-baseURL = "https://kross.netlify.com"
+baseURL = "http://www.gusonex.cloud"
 languageCode = "en-us"
 title = "Kross | Hugo Portfolio Template"
 theme = "kross"
@@ -28,22 +28,22 @@ summaryLength = "10"
 
 # navigation
 [menu]
-    
+
   [[menu.main]]
   name = "About"
   URL = "about"
   weight = 2
-  
+
   [[menu.main]]
   name = "Blog"
   URL = "blog"
   weight = 3
-  
+
   [[menu.main]]
   name = "Portfolio"
   URL = "portfolio"
   weight = 4
-  
+
   [[menu.main]]
   name = "Contact"
   URL = "contact"
