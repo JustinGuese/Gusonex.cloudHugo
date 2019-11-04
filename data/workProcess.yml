@@ -1,12 +1,12 @@
 step:
   - title : "Research and Plan"
     icon : "images/icons/plan.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    
+    content : "Nothing is achieved if the direction and goals of a project are not clear. I have seen way too many projects fail because of a lack of communication and clear goal-setting. Before starting a project, I will extensively define the problem together with you, to find your optimal, tailored solution."
+
   - title : "Design and Develop"
     icon : "images/icons/design.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    
+    content : "In my experience, the greatest results for both sides are made by fulfilling the wishes of a customer to 100+ percent. My solutions to a problem are always made with the most precise considerations and the newest tools available. During this process, I will constantly evaluate the current status of the project together with you to avoid unforeseen misunderstandings or a not fully satisfying product."
+
   - title : "Deliver"
     icon : "images/icons/print.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    content : "Delivering results. After several stage gates, your final product will be delivered on time, which is of course not where my service ends. If you are having any concerns, improvements or new projects in mind, you will be always able to reach me. Start your journey towards the future now!"

@@ -1,6 +1,6 @@
 baseURL = "http://www.gusonex.cloud"
 languageCode = "en-us"
-title = "Kross | Hugo Portfolio Template"
+title = "Gusonex | AWS Cloud, Big Data & ML, Virtual Reality"
 theme = "kross"
 summaryLength = "10"
 
@@ -54,10 +54,10 @@ summaryLength = "10"
 logo = "images/logo.png"
 home = "Home"
 # Meta data
-description = "This is meta description"
-author = "Themefisher"
+description = "Solution Architect for Cloud, Big Data, Virtual and Augmented Reality, and distributed computing."
+author = "Justin Güse"
 # Google Analitycs
-googleAnalitycsID = "Your ID"
+googleAnalitycsID = "UA-56269619-16"
 
   # Preloader
   [params.preloader]
@@ -65,9 +65,9 @@ googleAnalitycsID = "Your ID"
 
   [params.contact]
   enable = true
-  formAction = "#" #contact form works with formspree.io
+  formAction = "https://formspree.io/mjvbqzrj" #contact form works with formspree.io
 
   [params.footer]
-  email = "steve.fruits@email.com"
+  email = "info@gusonex.cloud"
   phone = "+880 2544 658 256"
   address = "125/A, CA Commercial Area, California, USA"
