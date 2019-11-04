@@ -1,6 +1,6 @@
 # banner
 banner:
-  title : "Hi! I’m <br> Justin Güse, <br> Solution Architect"
+  title : "Justin Güse, <br> Solution Architect"
   socialLinks:
     - icon : "ti-facebook"
       URL : "#"
@@ -17,7 +17,8 @@ banner:
 # about
 about:
   enable : true
-  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  content : "Hi, I'm Justin Güse, a Solution Architect for Cloud, Big Data, Virtual Reality, and distributed computing.
+<br> My goal? Taking the new possibilities offered by new technologies to your company and helping newcomers to get started. Have a look around and feel free to drop a comment or any remarks."
   button:
     btnText : "know more"
     URL : "/about"
@@ -26,78 +27,78 @@ about:
 skill:
   enable : true
   skillbar:
-    - title : "Web Design"
-      progress : "90%"
+    - title : "AWS Cloud"
+      progress : "100%"
       color : "#fdb157"
 
-    - title : "Logo Design"
-      progress : "60%"
+    - title : "Big Data"
+      progress : "95%"
       color : "#9473e6"
 
-    - title : "After Effects"
-      progress : "80%"
+    - title : "Machine Learning"
+      progress : "90%"
       color : "#bdecf6"
 
-    - title : "Web App"
-      progress : "70%"
+    - title : "VR/AR"
+      progress : "80%"
       color : "#ffbcaa"
 
 # experience
 experience:
   enable : true
   item:
-    - logo : "images/experience/icon-1.png"
-      title : "Junior UX Designer"
-      company : "WEBEX"
-      duration : "Jan 2007 - Feb 2009"
+    - logo : "images/experience/jgwebdesign.png"
+      title : "CEO"
+      company : "Justin Güse Webdesign"
+      duration : "2012 - 2016"
 
-    - logo : "images/experience/icon-2.png"
-      title : "UX & UI Designer"
-      company : "AUGMEDIX"
-      duration : "Mar 2009 - Aug 2014"
+    - logo : "images/experience/phs.png"
+      title : "Data Scientist / Cloud Solution Architect"
+      company : "Porsche Austria"
+      duration : "Oct 2016 - Oct 2019"
 
-    - logo : "images/experience/icon-1.png"
-      title : "Senior UI Designer"
-      company : "THEMEFISHER"
-      duration : "Sep 2014 - Present"
+    - logo : "images/logo_black.png"
+      title : "Freelance"
+      company : "Gusonex"
+      duration : "Oct 2019 - Present"
 
 # education
 education:
   enable : true
   item:
-    - title : "Marters in UX Design"
-      year : "2006"
-      academy : "Masassusets Institute of Technology"
+    - title : "AWS Solution Architect Associate"
+      year : "2018"
+      academy : "Amazon Web Services"
 
-    - title : "Honours in Fine Arts"
-      year : "2004"
-      academy : "Harvard University"
+    - title : "M.Sc. Computational Neuroscience"
+      year : "2015-"
+      academy : "TU Graz, AT"
 
-    - title : "Higher Secondary Certificat"
-      year : "2000"
-      academy : "Cardiff School"
+    - title : "Kaggle Titanic Challenge Top 2%"
+      year : "2019"
+      academy : "Kaggle"
 
-    - title : "Secondary School Certificate"
-      year : "1998"
-      academy : "Cardiff School"
+    - title : "B.Sc. Cognitive Science"
+      year : "2013-"
+      academy : "University Osnabrück, DE"
 
 # service
 service:
   enable : true
   item :
-    - title : "UI Design"
-      icon : "ti-palette"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    - title : "Virtual / Augmented Reality"
+      icon : "ti-eye"
+      content : "The Augmented Reality Market is predicted to be worth USD 61.39 Billion by 2023. Why? Everyone is carrying an AR device with them at all times: our phones. The possibilities are almost endless - from marketing, home shopping to data analytics, the opportunities are only limited by our imagination."
       highlighted : false
 
-    - title : "UX Design"
-      icon : "ti-vector"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    - title : "Cloud"
+      icon : "ti-cloud"
+      content : "Reduced Time-to-market, unlimited scalability and lower costs - push your digital transformation with the Public Cloud. The AWS cloud is an enormous tool to help small businesses and enterprises alike to enhance sales, improve workloads, and innovate."
       highlighted : true
 
-    - title : "Interaction Design"
+    - title : "Big Data & ML"
       icon : "ti-panel"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      content : "Growing Business Through Applied Data Science and Advanced Technology. In the last years, the amount of data generated almost rose exponentially. Utilizing this information can improve sales, reduce costs and speed up processes on a never before seen scale."
       highlighted : false
 
 # portfolio
@@ -123,54 +124,54 @@ portfolio:
 testimonial:
   enable : true
   item:
-    - name : "Jesica Gomez"
-      image : "images/testimonial/client-1.png"
-      designation : "CEO, Funder"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    - name : "Matheus"
+      image : "images/testimonial/mat.png"
+      designation : "Outbound Area Manager at Amazon"
+      content : "Worked with Justin for 8 moths in Product Innovation Project, he is a authentic person with great ideas. It was always easy to work with him, he gives and receives reviews very well, he had a <strong>great affinity</strong> to everyone in the team, what makes aways better and <strong>more productive</strong> to work with. As our IT guy he could <strong>solve all the problems</strong>, even if he had to work more then expect. We did the Final Gala presentation together, it was a pleasure to do this presentation and work with him. I would <strong>recommend him for any job or partnership</strong>."
 
-    - name : "Shirley Scot"
-      image : "images/testimonial/client-1.png"
-      designation : "CEO, Funder"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    - name : "Arthur"
+      image : "images/testimonial/fiver.webp"
+      designation : "Fiverr Customer"
+      content : "<strong>Best experience</strong> so far on Fiverr! Great to work with, <strong>outstanding communication</strong> and <strong>in-depth programming knowledge</strong> - I can fully recommend!"
 
-    - name : "Jessica Julie"
-      image : "images/testimonial/client-1.png"
-      designation : "CEO, Funder"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    - name : "Lazaar"
+      image : "images/testimonial/fiver.webp"
+      designation : "Fiverr Customer"
+      content : "Very professional. Strongly recommend you select him if you want a <strong>high quality product</strong>. "
 
-# client slider
-clientSlider:
-  enable : true
-  item:
-    - logo : "images/clients-logo/client-logo-1.png"
-      URL : "#"
-
-    - logo : "images/clients-logo/client-logo-2.png"
-      URL : "#"
-
-    - logo : "images/clients-logo/client-logo-3.png"
-      URL : "#"
-
-    - logo : "images/clients-logo/client-logo-4.png"
-      URL : "#"
-
-    - logo : "images/clients-logo/client-logo-5.png"
-      URL : "#"
-
-    - logo : "images/clients-logo/client-logo-1.png"
-      URL : "#"
-
-    - logo : "images/clients-logo/client-logo-2.png"
-      URL : "#"
-
-    - logo : "images/clients-logo/client-logo-3.png"
-      URL : "#"
-
-    - logo : "images/clients-logo/client-logo-4.png"
-      URL : "#"
-
-    - logo : "images/clients-logo/client-logo-5.png"
-      URL : "#"
+# # client slider
+# clientSlider:
+#   enable : true
+#   item:
+#     - logo : "images/clients-logo/client-logo-1.png"
+#       URL : "#"
+#
+#     - logo : "images/clients-logo/client-logo-2.png"
+#       URL : "#"
+#
+#     - logo : "images/clients-logo/client-logo-3.png"
+#       URL : "#"
+#
+#     - logo : "images/clients-logo/client-logo-4.png"
+#       URL : "#"
+#
+#     - logo : "images/clients-logo/client-logo-5.png"
+#       URL : "#"
+#
+#     - logo : "images/clients-logo/client-logo-1.png"
+#       URL : "#"
+#
+#     - logo : "images/clients-logo/client-logo-2.png"
+#       URL : "#"
+#
+#     - logo : "images/clients-logo/client-logo-3.png"
+#       URL : "#"
+#
+#     - logo : "images/clients-logo/client-logo-4.png"
+#       URL : "#"
+#
+#     - logo : "images/clients-logo/client-logo-5.png"
+#       URL : "#"
 
 # blog
 blog:
