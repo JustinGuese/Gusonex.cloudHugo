@@ -1,61 +1,72 @@
 # portfolio filter list
 list:
-  - title : "UI/UX Design"
-    type : "design"
-    
-  - title : "BRANDING"
-    type : "branding"
-    
-  - title : ILLUSTRATION"
-    type : "illustration"
+  - title : "Virtual / Augmented Reality"
+    type : "VR-AR"
+
+  - title : "Cloud"
+    type : "cloud"
+
+  - title : "Big Data / ML"
+    type : "bigdata"
 
 # portfolio item
 item:
-  - image : "images/portfolio/item-1.png"
-    projectURL : "#"
+  - image : "images/portfolio/kaggle-advancedfeaturesengineering.png"
+    projectURL : "/portfolio/kaggle-titanic"
     projectType:
-      - type: "design"
-      - type: "illustration"
-      
-  - image : "images/portfolio/item-2.png"
-    projectURL : "#"
+      - type: "bigdata"
+
+  - image : "images/portfolio/discovar-ar-viewer.png"
+    projectURL : "/portfolio/porsche-ar-viewer"
     projectType:
-      - type: "branding"
-      
-  - image : "images/portfolio/item-3.png"
-    projectURL : "#"
+      - type: "VR-AR"
+
+  - image : "images/portfolio/porsche-bigdata-digital-twin.png"
+    projectURL : "/portfolio/porsche-bigdata-digital-twin"
     projectType:
-      - type: "illustration"
-      
-  - image : "images/portfolio/item-6.png"
-    projectURL : "#"
+      - type: "bigdata"
+
+  - image : "images/portfolio/porsche-arviewerwebsite.png"
+    projectURL : "/portfolio/porsche-arviewerwebsite"
     projectType:
-      - type: "design"
-      - type: "branding"
-      
-  - image : "images/portfolio/item-8.png"
-    projectURL : "#"
+      - type: "cloud"
+
+  - image : "images/portfolio/porsche-cloud-bigdataanalytics.png"
+    projectURL : "/portfolio/porsche-cloud-bigdataanalytics"
     projectType:
-      - type: "illustration"
-      
-  - image : "images/portfolio/item-5.png"
-    projectURL : "#"
+      - type: "bigdata"
+
+  - image : "images/portfolio/porsche-cloud-compliance.png"
+    projectURL : "/portfolio/porsche-cloud-compliance"
     projectType:
-      - type: "design"
-      
-  - image : "images/portfolio/item-1.png"
-    projectURL : "#"
+      - type: "cloud"
+
+  - image : "images/portfolio/porsche-cloud-livestreaming.png"
+    projectURL : "/portfolio/porsche-cloud-livestreaming"
     projectType:
-      - type: "branding"
-      
-  - image : "images/portfolio/item-3.png"
-    projectURL : "#"
+      - type: "cloud"
+
+  - image : "images/portfolio/porsche-cloud-streamdataprocessing-aws-firehose.png"
+    projectURL : "/portfolio/porsche-cloud-streamdataprocessing-aws-firehose"
     projectType:
-      - type: "design"
-      - type: "illustration"
-      - type: "branding"
-      
-  - image : "images/portfolio/item-7.png"
-    projectURL : "#"
+      - type: "cloud"
+
+  - image : "images/portfolio/porsche-groupitwebsite.png"
+    projectURL : "/portfolio/porsche-groupitwebsite"
     projectType:
-      - type: "illustration"
+      - type: "cloud"
+
+  - image : "images/portfolio/porsche-cloud-streamdataprocessing-aws-firehose.png"
+    projectURL : "/portfolio/porsche-cloud-streamdataprocessing-aws-firehose"
+    projectType:
+      - type: "cloud"
+
+  - image : "images/portfolio/porsche-cloud-streamdataprocessing-aws-firehose.png"
+    projectURL : "/portfolio/porsche-cloud-streamdataprocessing-aws-firehose"
+    projectType:
+      - type: "cloud"
+
+  - image : "images/portfolio/unraceable.png"
+    projectURL : "/portfolio/unraceable"
+    projectType:
+      - type: "VR-AR"

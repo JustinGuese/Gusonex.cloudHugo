@@ -3,16 +3,16 @@ banner:
   title : "Justin Güse, <br> Solution Architect"
   socialLinks:
     - icon : "ti-facebook"
-      URL : "#"
+      URL : "https://www.facebook.com/guese.justin"
 
-    - icon : "ti-instagram"
-      URL : "#"
+    - icon : "ti-linkedin"
+      URL : "https://www.linkedin.com/in/justin-guese/"
 
-    - icon : "ti-dribbble"
-      URL : "#"
+    - icon : "ti-github"
+      URL : "https://github.com/JustinGuese"
 
-    - icon : "ti-twitter"
-      URL : "#"
+    - icon : "ti-wand"
+      URL : "https://www.kaggle.com/guesejustin"
 
 # about
 about:

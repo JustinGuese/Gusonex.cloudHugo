@@ -37,15 +37,19 @@
   <div class="section">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
           <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary">{{.Site.Params.footer.email}}</p>
+          <p class="text-white paragraph-lg font-secondary"><a href="mailto:{{.Site.Params.footer.email}}">{{.Site.Params.footer.email}}</a></p>
         </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Phone</h5>
+        <div class="col-md-3">
+          <h5 class="text-light">Phone US</h5>
           <p class="text-white paragraph-lg font-secondary">{{.Site.Params.footer.phone}}</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
+          <h5 class="text-light">Phone EU</h5>
+          <p class="text-white paragraph-lg font-secondary">{{.Site.Params.footer.phone2}}</p>
+        </div>
+        <div class="col-md-3">
           <h5 class="text-light">Address</h5>
           <p class="text-white paragraph-lg font-secondary">{{.Site.Params.footer.address}}</p>
         </div>
