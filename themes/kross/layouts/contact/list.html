@@ -1,5 +1,32 @@
 {{ define "main" }}
 
   {{ partial "page-title.html" . }}
-  
+  <section class="section pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+          <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=13.035171031951906%2C47.81829139642913%2C13.042509555816652%2C47.82735354232523&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a target="blank" href="https://www.openstreetmap.org/#map=17/47.82282/13.03884">View Larger Map</a></small>
+        </div>
+        <br/>
+        <div class="col-md-10">
+          <h5 class="text">Email</h5>
+          <p class="text paragraph-lg font-secondary"><a href="mailto:{{.Site.Params.footer.email}}">{{.Site.Params.footer.email}}</a></p>
+        </div>
+        <div class="col-md-10">
+          <h5 class="text">Phone US</h5>
+          <p class="text paragraph-lg font-secondary"><a href="tel:{{.Site.Params.footer.phone}}">{{.Site.Params.footer.phone}}</a></p>
+        </div>
+        <div class="col-md-10">
+          <h5 class="text">Phone EU</h5>
+          <p class="text paragraph-lg font-secondary"><a href="tel:{{.Site.Params.footer.phone2}}">{{.Site.Params.footer.phone2}}</a></p>
+        </div>
+        <div class="col-md-10">
+          <h5 class="text">Address</h5>
+          <p class="text paragraph-lg font-secondary">{{.Site.Params.footer.address}}</p>
+        </div>
+      </div>
+      </div>
+  </section>
+
+
 {{ end }}
