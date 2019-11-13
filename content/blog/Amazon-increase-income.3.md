@@ -5,6 +5,7 @@ image: "images/blog/post-4.jpg"
 description: "This is meta description."
 author: "Themefisher"
 type: "post"
+tags: ["vr"]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
