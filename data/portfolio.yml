@@ -56,15 +56,6 @@ item:
     projectType:
       - type: "cloud"
 
-  - image : "images/portfolio/porsche-cloud-streamdataprocessing-aws-firehose.png"
-    projectURL : "/portfolio/porsche-cloud-streamdataprocessing-aws-firehose"
-    projectType:
-      - type: "cloud"
-
-  - image : "images/portfolio/porsche-cloud-streamdataprocessing-aws-firehose.png"
-    projectURL : "/portfolio/porsche-cloud-streamdataprocessing-aws-firehose"
-    projectType:
-      - type: "cloud"
 
   - image : "images/portfolio/unraceable.png"
     projectURL : "/portfolio/unraceable"
