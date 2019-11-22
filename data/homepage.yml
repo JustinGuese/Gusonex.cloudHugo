@@ -32,15 +32,15 @@ skill:
       color : "#fdb157"
 
     - title : "Big Data"
-      progress : "95%"
+      progress : "100%"
       color : "#9473e6"
 
     - title : "Machine Learning"
-      progress : "90%"
+      progress : "100%"
       color : "#bdecf6"
 
     - title : "VR/AR"
-      progress : "80%"
+      progress : "95%"
       color : "#ffbcaa"
 
 # experience
