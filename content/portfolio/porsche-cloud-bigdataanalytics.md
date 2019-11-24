@@ -1,20 +1,38 @@
 ---
-title: "Porsche Cloud Bigdataanalytics"
+title: "Cloud Big Data Analytics"
 date: 2019-11-05T16:47:50+01:00
-image: "images/portfolio/kaggle-advancedfeaturesengineering.png"
+image: "images/portfolio/porsche-cloud-bigdataanalytics.png"
 description: "This is meta description."
 author: "Justin Güse"
 ---
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-Why do we use it?
+Enterprises have an enormous amount of data at their hands. Usually, this data is stored in several systems, with different data formats, different security measures and locations. Now, what is the best approach to unify this data, and make analytics that result in a bigger turnover?
 
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+### 1. Checking the security requirements, gathering data sources
 
-Where does it come from?
+One of the biggest tasks involved gathering the data sources and building a "map" of all of them. This exhausting necessity has to be performed before taking the first steps, because if you are basing your decisions on something incomplete, a fix when it is too late to change things might be way more expensive than a thorough exploration phase.
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+### 2. Decision: Read Replicas or Live databases?
 
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-Where can I get some?
+Usually, it is always the best idea to use read replicas, which are copies of your data just for reading, for analytic purposes. Sometimes it can make more sense to use the production databases instead, which varies from case to case. Using read replicas involves paying for further instances, but avoids crashing a live database.
 
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefi
+### 3. Decision: On-Premise or Public Cloud?
+
+A really tough question in recent years, that needs to be based on several questions. Key questions are:
+
+* Does compliance allow the storage of my data in the cloud? If so, does it need to be encrypted?
+* How large is the amount of data saved? For really large amounts of data, it is usually cheaper to host it in the Public Cloud
+* Do users in locations far away from my On-Premise datacenter need access to the data? AWS, Azure, and Google all offer a worldwide network of servers, which can significantly boost the speed of access to the data. Public Clouds can therefore massively change the user experience in a good way.
+* How do I regulate access to the data?
+
+A rule of thumb is that less-significant data should be saved in the Public Cloud, whilst sensitive data should usually remain On-Premise. There are a lot of possibilities for in-between-decisions, like having a Hybrid Cloud or encrypting files in the Public Cloud and storing the keys On-Premise, feel free to contact me for further details.
+
+### 4. What analytical tools will I use?
+
+From my experience, it is the best idea to find a few tools that satisfy almost all end users, even if that means sacrificing analytical power. In an enterprise, too many tools become tedious to manage. Usually, every user has a tool that he is used to, but if every user uses their own tool instead of using a centralized system, confusion is ensured and your Data Project might be at risk before it even started.
+I proposed Microsoft PowerBI for business users and AWS EMR and an on-premise Jupyterhub-Spark configuration for this. Why? Contact me to find out more.
+
+### 5. Onboarding & Documentation
+
+I have seen way too many projects fail because of products being left alone after they are finished. The usage usually lasts for some months, but by then either support is missing, or no one knows anymore that it exists or how to use it. Therefore documentation and onboarding are some of the most crucial steps in building up a Big Data landscape. We used Microsoft Sharepoint or our own Wordpress based Infosite for this.
+
+Do you want to know more about this process? Are you in the middle of it? Shoot me a message or comment below.
