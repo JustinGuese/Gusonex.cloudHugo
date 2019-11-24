@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<section class="section pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ partial "portfolio.html" . }}
+
+  <!-- clients -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+        </div>
+      </div>
+      {{ partial "client-slider.html" . }}
+    </div>
+  </section>
+  <!-- /clients -->
+
+{{ end }}

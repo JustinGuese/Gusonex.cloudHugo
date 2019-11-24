@@ -1,7 +1,6 @@
 ---
-title: "My Services"
-date: 2019-11-05T16:47:50+01:00
-image: "images/portfolio/kaggle-advancedfeaturesengineering.png"
+title: "Services"
+date: 2019-05-12T12:14:34+06:00
 description: "This is meta description."
-author: "Justin Güse"
 ---
+We offer a broad range of services
