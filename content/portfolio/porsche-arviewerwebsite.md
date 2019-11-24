@@ -1,20 +1,18 @@
 ---
-title: "Porsche Arviewerwebsite"
+title: "Porsche AR Viewer Website"
 date: 2019-11-05T16:47:50+01:00
 image: "images/portfolio/porsche-arviewerwebsite.png"
 description: "This is meta description."
 author: "Justin Güse"
 ---
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-Why do we use it?
+The website for the Porsche AR Viewer (http://www.discovar.at) had special requirements. For once, security guidelines for the Porsche Holding are immensely high, and second, a solution was needed to host the website at a minimal cost. Both challenges were solved in their own way.
 
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+## Security Guidelines
 
-Where does it come from?
+The first approach has been a classic CMS hosted on a LAMP stack, but soon the guidelines regarding hosting blew the budget. Another solution was needed. I proposed the idea of a static website hosted on an AWS S3 bucket because without a CMS or any dynamic parts of the website (PHP, ...) the website becomes "serverless" and therefore basically unhackable. The website was programmed by myself using HTML5 and Bootstrap.
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+## Hosting websites at a minimal cost
 
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-Where can I get some?
+There was barely any budget for hosting. Together with the aforementioned conditions, a classic server setup was not thinkable of. Together with the security guidelines, I decided to host the static website on an AWS S3 bucket, which means that you are basically only paying for the usage, or in other words if someone views the website, instead of paying a fixed monthly cost. Additionally, the AWS includes a "free tier limit", which is a monthly free amount of storage and transmission that is included in your account for free - and therefore oftentimes resulting in a website hosted for free.
 
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefi
+What are your experiences with static websites? Do you have a web project that might need speed, security and cost improvement? Comment below or write me a direct message.
