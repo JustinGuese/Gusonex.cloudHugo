@@ -1,20 +1,28 @@
 ---
-title: "Porsche Bigdata Digital Twin"
+title: "Porsche Digital Twin"
 date: 2019-11-05T16:47:50+01:00
-image: "images/portfolio/porsche-cloud-bigdataanalytics.png"
+image: "images/portfolio/porsche-bigdata-digital-twin.png"
 description: "This is meta description."
 author: "Justin Güse"
 ---
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-Why do we use it?
+> "A digital twin is a digital replica of a living or non-living physical entity."
 
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+Source: https://en.wikipedia.org/wiki/Digital_twin
 
-Where does it come from?
+A digital twin in marketing is a user that is similar to a user that has already been on your website.
+This is done because you are already knowing what products or pages the user viewed and can offer a similar using the same experience.
+But how is this done?
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+## Big Data aspects of a digital twin
 
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-Where can I get some?
+First, we saved all the web events of our websites in a No-SQL database called Elasticsearch. Elasticsearch is a great application for text-based search and quick queries on huge databases using Lucene.
 
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefi
+### Graph search in Elasticsearch
+
+Simplified, we used a graph search that is integrated into Elasticsearch (see https://www.elastic.co/de/what-is/elasticsearch-graph) to find users that are similar to the current user. Via REST-API calls with the matching Lucene queries, similar products from digital twins were extracted, and presented as recommendations to the current user.
+
+### Challenges using Elasticsearch for Digital Twins
+
+A huge challenge in this scenario has been speed. Users usually leave a website if it loads longer than 250ms. This expands drastically, with 11% of the users leaving after one second loading time, and around 90% with more than four seconds of loading time (Source: https://think.storage.googleapis.com/docs/mobile-page-speed-new-industry-benchmarks.pdf). Therefore we had to optimize the Elasticsearch cluster and partly simplify our queries to achieve a loading time of around 200ms. How? Leave a message below or contact me to find out more. 
+
+Did you ever use Elasticsearch for Digital Twins? Do you want to find out how you can build digital twins and matching recommendations for your customers? Leave a message in the comments below or message me directly.
