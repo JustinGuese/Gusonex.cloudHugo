@@ -32,5 +32,15 @@ According to a recent study  (Source https://bit.ly/2Ogj4KM), 65 percent of user
 
 > What are your challenges and thoughts about virtual reality and augmented reality? Let me know in the comments below, or in a direct message via the contact option.
 
+## Our Virtual and Augmented Realtiy Services:
+
+##### VR experiences / gaming animation and programming
+##### VR rental Services, renting Oculus Rift, HTC Vive, Samsung Galaxy Gear
+##### Virtual Reality Motion Seats
+##### VR Racing
+##### Virtual Reality for Business Trips
+##### Augmented Reality programming and design
+##### AR cover letters
+##### AR rentals
 
 ### Our Portfolio:
