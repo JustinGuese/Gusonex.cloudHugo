@@ -52,6 +52,12 @@ summaryLength = "10"
   parent = "services"
 
   [[menu.main]]
+  name = "Cloud"
+  URL = "services/cloud/"
+  weight = 4
+  parent = "services"
+
+  [[menu.main]]
   name = "Portfolio"
   URL = "portfolio"
   weight = 5

@@ -34,6 +34,8 @@ According to a recent study  (Source https://bit.ly/2Ogj4KM), 65 percent of user
 
 > What are your challenges and thoughts about virtual reality and augmented reality? Let me know in the comments below, or in a direct message via the contact option.
 
+[Get a free 15 minute consultation!](/contact)
+
 ## Our Virtual and Augmented Realtiy Services:
 
 ##### VR experiences / gaming animation and programming

@@ -1,5 +1,5 @@
 ---
-title: "BIG DATA"
+title: "Cloud"
 date: 2019-05-12T12:14:34+06:00
 description: "This is meta description."
 ---
@@ -39,8 +39,6 @@ Once a stable algorithm or toolkit is defined, errors will be greatly reduced. I
 
 #### 5. Data Driven Company
 There are almost impossible applications of Big Data waiting to be unveiled. Utilizing all the data a company generates, turnover might even triple and budget consuming processes can be defined and eliminated. Do you want to find out how? Contact me and we will have a short free chat, or have a look at some of our use cases below.
-
-[Get a free 15 minute consultation!](/contact)
 
 ## Our services
 
