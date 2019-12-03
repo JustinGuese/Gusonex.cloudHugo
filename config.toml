@@ -58,6 +58,18 @@ summaryLength = "10"
   parent = "services"
 
   [[menu.main]]
+  name = "Why is this website so fast?"
+  URL = "services/serverless/"
+  weight = 4
+  parent = "services"
+
+  [[menu.main]]
+  name = "Serverless"
+  URL = "services/serverless/"
+  weight = 4
+  parent = "services"
+
+  [[menu.main]]
   name = "Portfolio"
   URL = "portfolio"
   weight = 5
