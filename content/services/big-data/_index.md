@@ -6,6 +6,8 @@ description: "This is meta description."
 
 # BIG DATA: What it is and why you should care.
 
+[Get a 15 minute free call!](/contact)
+
 Big data describes large volumes of data, further divided into structured and unstructured data (<a href="https://en.wikipedia.org/wiki/Big_data" target="_blank" >Source</a>). Of course this is a vague definition, but in general, one can speak of Big Data if classic tools are not adequate anymore, and for processing the vast amounts of data special tools are needed.
 
 > "By 2025, IDC predicts there will be 163 zettabytes of data." (<a href="https://www.seagate.com/files/www-content/our-story/trends/files/idc-seagate-dataage-whitepaper.pdf" target="blank">Source</a>)
