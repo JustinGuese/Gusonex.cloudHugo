@@ -4,54 +4,60 @@ date: 2019-05-12T12:14:34+06:00
 description: "This is meta description."
 ---
 
-# BIG DATA: What it is and why you should care.
+## Cloud - What it is and why you should act today.
 
 [Get a free 15 minute consultation!](/contact)
 
-Big data describes large volumes of data, further divided into structured and unstructured data (<a href="https://en.wikipedia.org/wiki/Big_data" target="_blank" >Source</a>). Of course this is a vague definition, but in general, one can speak of Big Data if classic tools are not adequate anymore, and for processing the vast amounts of data special tools are needed.
+Cloud Computing is rising rapidly, predicted to grow more than six times the rate of general IT in 2020 [Source] (https://www.salesforce.com/uk/blog/2017/10/idc-how-the-salesforce-economy-is-driving-growth-and-creating-jo.html), which is mainly due to the enormous benefits it is offering. But many businesses struggle with the adaption, mainly because it is such a new technology that should not be implemented without any thought. Way too often a too hastily implementation resulted in huge data lakes, that did not even spare the biggest companies:
 
-> "By 2025, IDC predicts there will be 163 zettabytes of data." (<a href="https://www.seagate.com/files/www-content/our-story/trends/files/idc-seagate-dataage-whitepaper.pdf" target="blank">Source</a>)
+#### 1. Microsoft
+In late 2010 Microsoft discovered a breach which resulted in a huge leak of their employee contact info, which was due to an authentification error in the code [Source](https://www.pcworld.com/article/214775/microsoft_cloud_data_breach_sign_of_future.html).
 
-### Enormous amounts of data
+#### 2. Dropbox
+In 2012 hackers stole 68 million user accounts and posted them on a dark web marketplace, allowing buyers to get all the data for a mere sum of 1,141 USD [Source](https://www.bbc.com/news/technology-37232635). This is what can happen if the security of a database is not good enough.
 
-The amount of data generated will exponentially rise in the next years, is predicted to even reach 163 zettabytes of data generated according to the IDC.
-This will force companies to deal with rising storage demands, replacement of existing analytic tools, and probably a change of their personal, which can easily overwhelm them if data is not their core focus.
+#### 3. Apple iCloud
+Maybe the most-known data leak in the cloud happened, when in 2014 hackers gained access to private pictures stored in iCloud, Apple's cloud service. A security issue in the iCloud API resulted in around 500 private pictures of celebrities being sold online [Source](https://en.wikipedia.org/wiki/ICloud_leaks_of_celebrity_photos).
 
-### Is Big Data evil?
+## The Top 4 benefits of Cloud
 
-Every new technology seems to scare people at first, but people easily forget about the huge benefits offered by it. For example, with more precise recommendations processes can be massively improved, or the revenue of a company easily increased.
+But if Cloud technology is implemented in a good and secure way, many benefits arise:
 
-### What are the benefits of Big Data?
+#### 1. Cost Reduction
 
-#### 1. Cost Savings
+Due to the possibility of just buy the resources that you use instead of buying whole server architectures, you are never paying for servers that are not in use. Let us look at an example: If a data analyst is using a huge Hadoop Cluster during working hours, but they are idling at night, a lot of efficiencies is wasted. What if instead the analyst can dynamically allocate resources in the cloud and just use them if they are needed?
 
-Using the right tools like Hadoop or Public Cloud providers can help enormously reduce traditional costs compared to On-Premise database hosting. There are several "tricks" of Big Data to compress files, reduce the required processing power and much more.
+#### 2. Scalability
 
-#### 2. Time reduction
+The same principle goes for scalability. Let us take Black Friday as an example. On this day websites experience a huge demand for customers arriving at their websites. To fully handle this load, a huge server architecture is needed. But if these servers are mostly idling on all the other days, a company will experience high server costs even though they are not used. Scaling means, that you dynamically allocate resources in the cloud to meet your changing computational demands.
 
-Distributed tools like Hadoop or Elasticsearch can greatly reduce the time of processing. E.g. some tools try to precalculate queries to instantly deliver an answer if it is requested, or distribute the tasks to several machines automatically. This saves a lot of time compared to a single machine performing the same task.
+#### 3. Flexibility and Innovation
 
-#### 3. Improve Customer experiences
-Every person is different, therefore it is difficult to find one specific customer journey that satisfies all customers. On the contrary, if your company defines too many different customer journeys, you would need a lot of staff. Big Data helps, in this case, to examine the optimal process for each of your customers and deliver the right strategy automatically.
+In traditional architectures, provisioning servers can take months. With the Public Cloud, servers can easily be provisioned in seconds and shut-down in about the same time. This allows for easy deployment of experiments and innovation without high risks.
 
-#### 4. Error prevention
-Once a stable algorithm or toolkit is defined, errors will be greatly reduced. If a human is processing information, especially repetitive ones, errors can easily happen. A stable algorithm and pipeline can greatly reduce the amounts of error occuring.
+#### 4. Serverless
 
-#### 5. Data Driven Company
-There are almost impossible applications of Big Data waiting to be unveiled. Utilizing all the data a company generates, turnover might even triple and budget consuming processes can be defined and eliminated. Do you want to find out how? Contact me and we will have a short free chat, or have a look at some of our use cases below.
+One of the biggest benefits is the rising offer of serverless architectures. With serverless developers can focus on their code, and do not need to worry about server updates, security patches and hardware failures. Head over to [Serverless](/services/serverless) to find out more.
+
+Now the remaining question is: How could you benefit from the cloud? This is a huge topic, and can not be answered in a single sentence. But feel free to give me a call, or comment below and let us discuss possible applications in your environment.
+[Get a free 15 minute consultation!](/contact)
+
+
 
 ## Our services
 
-#### Data Modelling
-#### Analytics
-#### ETL Pipeline design (Cloud and on-premise)
-#### Data Archives
-#### Security Concerns and Compliance
+#### Hybrid-Cloud setups
+#### AWS services
+#### AWS S3 Object Storage
+#### Data archiving in the cloud (AWS S3 and AWS Glacier)
+#### Relational Databases in the cloud (serverless)
+#### Unrelational Databases in the cloud (serverless)
 #### DSGVO data laws
-#### HIPAA Compliance
+#### HIPAA Compliance for medical storage of data
 #### Data crawling, data mining
-#### NoSQL databases
+#### Cloud Security (Monitoring, Governance)
 #### SQL to serverless migration
 #### Infrastructure as a service
-#### Hadoop, Elasticsearch, AWS EMR
+#### Hadoop, Elasticsearch, AWS EMR, Jupyterhub & Keras in the Cloud
 #### Programmatic Advertising
+#### HDFS file systems

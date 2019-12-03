@@ -79,6 +79,16 @@ summaryLength = "10"
   URL = "contact"
   weight = 6
 
+  [[menu.main]]
+  name = "Privacy Policy"
+  URL = "privacy-policy"
+  weight = 7
+
+  [[menu.main]]
+  name = "Impressum"
+  URL = "impressum"
+  weight = 8
+
 
 [params]
 logo = "images/logo.png"
