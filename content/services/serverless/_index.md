@@ -55,6 +55,12 @@ I still decided to go down the "static" route, because with it **many benefits**
 
 ### Recipe for this website
 
+<img src="/images/portfolio/serverless-markdown.png"
+     alt="Hugo static website builder"
+     style="float: middle; width:50%" />
+
+Above: Snapshot of the markdown code generating this website with GoHugo.
+
 TLDR;
 What exactly did I use for this website?
 
