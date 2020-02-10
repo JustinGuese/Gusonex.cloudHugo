@@ -1,117 +1,87 @@
 baseURL = "http://www.gusonex.cloud"
 languageCode = "en-us"
-title = "Gusonex | AWS Cloud, Big Data & ML, Virtual Reality"
-theme = "kross"
 summaryLength = "10"
-
-# Plugins
-[params.plugins]
-
-  # CSS Plugins
-  [[params.plugins.css]]
-  URL = "plugins/bootstrap/bootstrap.min.css"
-  [[params.plugins.css]]
-  URL = "plugins/slick/slick.css"
-  [[params.plugins.css]]
-  URL = "plugins/themify-icons/themify-icons.css"
-
-  # JS Plugins
-  [[params.plugins.js]]
-  URL = "plugins/jQuery/jquery.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/bootstrap/bootstrap.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/slick/slick.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/shuffle/shuffle.min.js"
-
-
-# navigation
-[menu]
-
-  [[menu.main]]
-  name = "About"
-  URL = "about"
-  weight = 2
-  parent = "about"
-
-  [[menu.main]]
-  name = "Blog"
-  URL = "blog"
-  weight = 3
-
-  [[menu.main]]
-  name = "Virtual / Augmented Reality"
-  URL = "services/virtual-augmented-reality"
-  weight = 4
-  parent = "services"
-
-  [[menu.main]]
-  name = "Big Data"
-  URL = "services/big-data/"
-  weight = 4
-  parent = "services"
-
-  [[menu.main]]
-  name = "Cloud"
-  URL = "services/cloud/"
-  weight = 4
-  parent = "services"
-
-  [[menu.main]]
-  name = "Why is this website so fast?"
-  URL = "services/serverless/"
-  weight = 1
-  parent = "services"
-
-  [[menu.main]]
-  name = "Serverless"
-  URL = "services/serverless/"
-  weight = 4
-  parent = "services"
-
-  [[menu.main]]
-  name = "Portfolio"
-  URL = "portfolio"
-  weight = 5
-
-  [[menu.main]]
-  name = "Contact"
-  URL = "contact"
-  weight = 6
-
-  [[menu.main]]
-  name = "Privacy Policy"
-  URL = "privacy-policy"
-  weight = 2
-  parent = "about"
-
-  [[menu.main]]
-  name = "Impressum"
-  URL = "impressum"
-  weight = 2
-  parent = "about"
-
-
+theme = "kross"
+title = "Gusonex | AWS Cloud, Big Data & ML, Virtual Reality"
+[[menu.main]]
+URL = "services/serverless/"
+name = "Serverless"
+parent = "Services"
+weight = 5
+[[menu.main]]
+URL = "services/cloud/"
+name = "Cloud"
+parent = "Services"
+weight = 4
+[[menu.main]]
+URL = "services/big-data/"
+name = "Big Data"
+parent = "Services"
+weight = 3
+[[menu.main]]
+URL = "services/virtual-augmented-reality"
+name = "Virtual / Augmented Reality"
+parent = "Services"
+weight = 2
+[[menu.main]]
+URL = "services/serverless/"
+name = "Why is this website so fast?"
+parent = "Services"
+weight = 1
+[[menu.main]]
+URL = "privacy-policy"
+name = "Privacy Policy"
+parent = "About"
+weight = 2
+[[menu.main]]
+URL = "impressum"
+name = "Impressum"
+parent = "About"
+weight = 1
+[[menu.main]]
+URL = "contact"
+name = "Contact"
+weight = 5
+[[menu.main]]
+URL = "portfolio"
+name = "Portfolio"
+weight = 3
+[[menu.main]]
+URL = "blog"
+name = "Blog"
+weight = 1
+[[menu.main]]
+URL = "about"
+name = "About"
+parent = "about"
+weight = 2
 [params]
-logo = "images/logo.png"
-home = "Home"
-# Meta data
-description = "Solution Architect for Cloud, Big Data, Virtual and Augmented Reality, and distributed computing."
 author = "Justin Güse"
-# Google Analitycs
+description = "Solution Architect for Cloud, Big Data, Virtual and Augmented Reality, and distributed computing."
 googleAnalitycsID = "UA-56269619-16"
-
-  # Preloader
-  [params.preloader]
-  enable = true
-
-  [params.contact]
-  enable = true
-  formAction = "https://formspree.io/mjvbqzrj" #contact form works with formspree.io
-
-  [params.footer]
-  email = "info@gusonex.cloud"
-  phone = "+1 ‪(413) 296-5682"
-  phone2 = "+43 677 62577902"
-  address = "Austraße 3a, 5020 Salzburg, Austria"
+home = "Home"
+logo = "images/logo.png"
+[params.contact]
+enable = true
+formAction = "https://formspree.io/mjvbqzrj"
+[params.footer]
+address = "Austraße 3a, 5020 Salzburg, Austria"
+email = "info@gusonex.cloud"
+phone = "+1 ‪(413) 296-5682"
+phone2 = "+43 677 62577902"
+[[params.plugins.css]]
+URL = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+URL = "plugins/slick/slick.css"
+[[params.plugins.css]]
+URL = "plugins/themify-icons/themify-icons.css"
+[[params.plugins.js]]
+URL = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+URL = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+URL = "plugins/slick/slick.min.js"
+[[params.plugins.js]]
+URL = "plugins/shuffle/shuffle.min.js"
+[params.preloader]
+enable = true
