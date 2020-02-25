@@ -8,6 +8,10 @@ fields:
 - type: datetime
   name: date
   label: date
+  config:
+    date_format: YYYY-MM-DD
+    time_format: hh:mm:ss A
+    export_format: YYYY-MM-DD hh:mm:ss A
 - type: file
   name: image
   label: image
