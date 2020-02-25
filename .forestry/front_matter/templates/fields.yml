@@ -1,4 +1,23 @@
 ---
 label: Fields
 hide_body: true
-fields: []
+fields:
+- name: headline
+  type: text
+  config:
+    required: false
+  label: Headline
+- name: mainpicture
+  type: file
+  config:
+    maxSize: 250
+  label: MainPicture
+- name: article
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Article
