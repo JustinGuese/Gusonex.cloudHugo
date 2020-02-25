@@ -21,5 +21,3 @@ fields:
     schema:
       format: markdown
   label: Article
-pages:
-- content/blog/Testbeitrag.md
