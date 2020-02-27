@@ -2,7 +2,6 @@
 author = "Justin Güse"
 date = 2020-02-27T21:00:00Z
 description = "MTCNN is a library used to extract faces from pictures and video files using python. In this post we will take a look at how to use it, improve it, and speed it up."
-draft = true
 image = "/images/result.jpg"
 tags = ["face detection", "face extraction", "python", "deeplearning"]
 title = "Face Detection using MTCNN - a guide for face extraction with a focus on speed"
