@@ -50,6 +50,8 @@ What does this tell us? A lot of it is self-explanatory, but it basically return
 
 If you want to do more advanced extractions or algorithms, you will have access to other facial landmarks, called "keypoints" as well. Namely the MTCNN model located the eyes, mouth and nose as well!
 
+## Drawing a box around faces
+
 To demonstrate this even better let us draw a box around the face using matplotlib:
 
     # draw an image with detected objects
@@ -81,4 +83,55 @@ To demonstrate this even better let us draw a box around the face using matplotl
     # display faces on the original image
     draw_facebox(filename, faces)
 
-![MTCNN detected box around face](/images/index.png "MTCNN detected box around face")
+![MTCNN facebox](/images/index-1.png "MTCNN facebox")
+
+## Displaying eyes, mouth and nose around faces
+
+Now let us take a look at the aforementioned "keypoints" that the MTCNN model returned. 
+
+We will now use these to graph the nose, mouth and eyes as well.  
+We will the add following code snippet to our code above:
+
+    # draw the dots
+    for key, value in result['keypoints'].items():
+    	# create and draw dot
+    	dot = plt.Circle(value, radius=20, color='orange')
+    	ax.add_patch(dot)
+
+With the full code from above looking like this:
+
+    # draw an image with detected objects
+    def draw_facebox(filename, result_list):
+        # load the image
+        data = plt.imread(filename)
+        # plot the image
+        plt.imshow(data)
+        # get the context for drawing boxes
+        ax = plt.gca()
+        # plot each box
+        for result in result_list:
+            # get coordinates
+            x, y, width, height = result['box']
+            # create the shape
+            rect = plt.Rectangle((x, y), width, height,fill=False, color='orange')
+            # draw the box
+            ax.add_patch(rect)
+            # draw the dots
+            for key, value in result['keypoints'].items():
+                # create and draw dot
+                dot = plt.Circle(value, radius=20, color='red')
+                ax.add_patch(dot)
+                # show the plot
+            plt.show()
+     
+    # filename = 'test1.jpg' # filename is defined above, otherwise uncomment
+    # load image from file
+    # pixels = plt.imread(filename) # defined above, otherwise uncomment
+    # detector is defined above, otherwise uncomment
+    #detector = mtcnn.MTCNN()
+    # detect faces in the image
+    faces = detector.detect_faces(pixels)
+    # display faces on the original image
+    draw_facebox(filename, faces)
+
+![MTCNN facebox with nose eye mouth detection](/images/index2.png "MTCNN facebox with nose eye mouth detection")
