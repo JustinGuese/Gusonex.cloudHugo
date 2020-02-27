@@ -30,4 +30,4 @@ Now switching to Python/Jupyter Notebook we can check the installation with an i
     # print version
     print(mtcnn.__version__)
 
-Afterwards we are ready to load out test image using the \[matplot\]([https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.imread.html](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.imread.html "https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.imread.html"))
+Afterwards we are ready to load out test image using the \[matplot\](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.imread.html)
