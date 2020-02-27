@@ -152,7 +152,7 @@ With the full code from above looking like this:
 
 Now let us come to the interesting part. If you are going to process millions of pictures you will need to speed up MTCNN, otherwise you will either fall asleep or your CPU will burn before it will be done. 
 
-But what exactly are we talking about? If you are running the above code it will take around one second, meaning we will process around one picture per second. If you are running MTCNN on a GPU and use the sped-up version it will achieve around 60-100 pictures/frames a second. That is a boost of up to **100 times**!
+But what exactly are we talking about? If you are running the above code it will take around one second, meaning we will process around one picture per second. If you are running MTCNN on a GPU and use the sped-up version it will achieve around 60-100 pictures/frames a second. That is a boost of up to **100 times** !
 
 If you are for example going to extract all faces of a movie, where you will extract 10 faces per second (one second of movie has on average around 24 frames, so every second frame) it will be 10 * 60 (seconds) * 120 (minutes) = 72,000 frames.
 
@@ -231,6 +231,6 @@ And finally let us run the face extraction script:
     
     run_detection(fast_mtcnn, filenames)
 
-![](/images/Screenshot from 2020-02-27 12-15-40.png)
+![65 frames per second on a Tesla P100](/images/Screenshot from 2020-02-27 12-15-40.png "65 frames per second on a Tesla P100")
 
 The above image shows the output of the code running on a NVIDIA Tesla P100, so depending on the source material, GPU and processor you might experience a better or worse performance.
