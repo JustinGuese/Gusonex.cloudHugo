@@ -17,7 +17,20 @@ In this paper they propose a deep cascaded multi-task framework using different 
 
 MTCNN performs quite fast on a CPU, even though S3FD is still quicker running on a GPU - but that is a topic for another post.
 
+This post uses code from the following two sources, check them out, they are interesting as well:
+
+*    [https://machinelearningmastery.com/how-to-perform-face-detection-with-classical-and-deep-learning-methods-in-python-with-keras/](https://machinelearningmastery.com/how-to-perform-face-detection-with-classical-and-deep-learning-methods-in-python-with-keras/ "https://machinelearningmastery.com/how-to-perform-face-detection-with-classical-and-deep-learning-methods-in-python-with-keras/")
+
+
+* [https://www.kaggle.com/timesler/fast-mtcnn-detector-55-fps-at-full-resolution](https://www.kaggle.com/timesler/fast-mtcnn-detector-55-fps-at-full-resolution "https://www.kaggle.com/timesler/fast-mtcnn-detector-55-fps-at-full-resolution")
+
 # Basic usage of MTCNN
+
+Feel free to access the whole notebook via: 
+
+[https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up](https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up "https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up")
+
+    git clone https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up
 
 Luckily MTCNN is available as a pip package, meaning we can easily install it using
 
@@ -135,3 +148,90 @@ With the full code from above looking like this:
     draw_facebox(filename, faces)
 
 ![MTCNN facebox with nose eye mouth detection](/images/index2.png "MTCNN facebox with nose eye mouth detection")
+
+# Advanced MTCNN: Speed it up (\~x100)!
+
+Now let us come to the interesting part. If you are going to process millions of pictures you will need to speed up MTCNN, otherwise you will either fall asleep or your CPU will burn before it will be done. 
+
+But what exactly are we talking about? If you are running the above code it will take around one second, meaning we will process around one picture per second. If you are running MTCNN on a GPU and use the sped-up version it will achieve around 60-100 pictures/frames a second. That is a boost of up to **100 times**!
+
+If you are for example going to extract all faces of a movie, where you will extract 10 faces per second (one second of movie has on average around 24 frames, so every second frame) it will be 10 * 60 (seconds) * 120 (minutes) = 72,000 frames.
+
+Meaning if it takes one second to process one frame it will take 72,000 * 1 (seconds) = 72,000s / 60s = 1,200m = **20 hours**
+
+With the sped-up version of MTCNN this task will take 72,000 (frames) / 100 (frames/sec) = 720 seconds = **12 minutes!**
+
+To use MTCNN on a GPU you will need to set up CUDA, cudnn, pytorch and so on. Pytorch wrote a good tutorial about that part: [https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/ "https://pytorch.org/get-started/locally/")
+
+Once installed we will do the necessary imports as follows:
+
+    from facenet_pytorch import MTCNN
+    from PIL import Image
+    import torch
+    from imutils.video import FileVideoStream
+    import cv2
+    import time
+    import glob
+    from tqdm.notebook import tqdm
+    
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    
+    filenames = ["glediston-bastos-ZtmmR9D_2tA-unsplash.jpg","glediston-bastos-ZtmmR9D_2tA-unsplash.jpg"]
+
+See how we defined the device in the code above? You will be able to run everything on a CPU as well if you do not want or can set up CUDA. 
+
+Next we will define the extractor:
+
+    # define our extractor
+    fast_mtcnn = FastMTCNN(
+        stride=4,
+        resize=0.5,
+        margin=14,
+        factor=0.6,
+        keep_all=True,
+        device=device
+    )
+
+In this snippet we pass along some parameters, where we for example only use half of the image size, which is one of the main impact factors for speeding it up.
+
+And finally let us run the face extraction script:
+
+    def run_detection(fast_mtcnn, filenames):
+        frames = []
+        frames_processed = 0
+        faces_detected = 0
+        batch_size = 60
+        start = time.time()
+    
+        for filename in tqdm(filenames):
+    
+            v_cap = FileVideoStream(filename).start()
+            v_len = int(v_cap.stream.get(cv2.CAP_PROP_FRAME_COUNT))
+    
+            for j in range(v_len):
+    
+                frame = v_cap.read()
+                frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+                frames.append(frame)
+    
+                if len(frames) >= batch_size or j == v_len - 1:
+    
+                    faces = fast_mtcnn(frames)
+    
+                    frames_processed += len(frames)
+                    faces_detected += len(faces)
+                    frames = []
+    
+                    print(
+                        f'Frames per second: {frames_processed / (time.time() - start):.3f},',
+                        f'faces detected: {faces_detected}\r',
+                        end=''
+                    )
+    
+            v_cap.stop()
+    
+    run_detection(fast_mtcnn, filenames)
+
+![](/images/Screenshot from 2020-02-27 12-15-40.png)
+
+The above image shows the output of the code running on a NVIDIA Tesla P100, so depending on the source material, GPU and processor you might experience a better or worse performance.
