@@ -60,7 +60,7 @@ author = "Justin Güse"
 description = "Solution Architect for Cloud, Big Data, Virtual and Augmented Reality, and distributed computing."
 googleAnalitycsID = "UA-56269619-16"
 home = "Home"
-logo = "images/logo.png"
+logo = "images/LogoDataFortress_whiteBlue_small.png"
 [params.contact]
 enable = true
 formAction = "https://formspree.io/mjvbqzrj"
