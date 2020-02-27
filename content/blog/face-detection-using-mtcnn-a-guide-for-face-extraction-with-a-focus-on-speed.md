@@ -13,6 +13,21 @@ type = "post"
 
 MTCNN is a python (pip) library written by Github user ipacz [https://github.com/ipazc/mtcnn#zhang2016](https://github.com/ipazc/mtcnn#zhang2016 "Source"), which implements the paper Zhang, Kaipeng et al. “Joint Face Detection and Alignment Using Multitask Cascaded Convolutional Networks.” IEEE Signal Processing Letters 23.10 (2016): 1499–1503. Crossref. Web. (Link)\[[https://arxiv.org/abs/1604.02878](https://arxiv.org/abs/1604.02878 "https://arxiv.org/abs/1604.02878")\] .
 
-In this paper they propose a deep cascaded multi-task framework using different features of "sub-models" to each boost their correlating strengths. 
+In this paper they propose a deep cascaded multi-task framework using different features of "sub-models" to each boost their correlating strengths.
 
-MTCNN performs quite fast on a CPU, even though S3FD is still quicker running on a GPU - but that is a topic for another post. 
+MTCNN performs quite fast on a CPU, even though S3FD is still quicker running on a GPU - but that is a topic for another post.
+
+# Installation of MTCNN
+
+Luckily MTCNN is available as a pip package, meaning we can easily install it using
+
+    pip install mtcnn
+
+Now switching to Python/Jupyter Notebook we can check the installation with an import and quick verification:
+
+    # confirm mtcnn was installed correctly
+    import mtcnn
+    # print version
+    print(mtcnn.__version__)
+
+Afterwards we are ready to load out test image using the \[matplot\]([https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.imread.html](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.imread.html "https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.imread.html"))
