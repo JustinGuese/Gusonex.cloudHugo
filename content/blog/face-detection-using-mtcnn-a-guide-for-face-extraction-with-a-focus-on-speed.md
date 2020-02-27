@@ -231,6 +231,6 @@ And finally let us run the face extraction script:
     
     run_detection(fast_mtcnn, filenames)
 
-![65 frames per second on a Tesla P100](/images/Screenshot from 2020-02-27 12-15-40.png "65 frames per second on a Tesla P100")
+![](/images/teslap100frames.png)
 
 The above image shows the output of the code running on a NVIDIA Tesla P100, so depending on the source material, GPU and processor you might experience a better or worse performance.
